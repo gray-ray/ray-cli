@@ -4,15 +4,15 @@ const { program } = require('commander');
 const fs = require('fs');
 const shell = require('shelljs');
 
-const update = require('../lib/update');
-const {PROJECT_TEMPLATES}  = require('../lib/constants');
+const update = require(`${__dirname}/../lib/update`);
+const {PROJECT_TEMPLATES}  = require(`${__dirname}/../lib/constants`);
 
-const { initProject, dirExists, cloneTemplate } = require('../lib/fn');
+const { initProject, dirExists, cloneTemplate } = require(`${__dirname}/../lib/fn`);
 
 /**
  * @description 快捷查询
  */
-program.version(require('../package.json').version, '-v, --version');
+program.version(require(`${__dirname}/../package.json`).version, '-v, --version');
 
 /**
  * @description 版本检查
