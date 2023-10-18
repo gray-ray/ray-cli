@@ -1,6 +1,6 @@
 ### 关于 ray-cli
 
-常见项目模板初始化 
+常见项目模板初始化 , 后续加入更新多项目模板
 - vue + vite + typescript
 - react + vite + typescript
 
