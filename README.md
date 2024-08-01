@@ -1,24 +1,15 @@
-### 关于 ray-cli
 
-常见项目模板初始化 , 后续加入更新多项目模板
-- vue + vite + typescript
-- react + vite + typescript
+### 安装
+
+`npm i ray-template-clone`
 
 
 ### 使用
 
-``` bash 
 
- npm  i -g ray-cli
-
- # 或者
-
- yarn global add ray-cli
-
- # 或者
+- 下载项目模板
+`ray-template-clone download <templateName>`
 
 
-pnpm  add  -g ray-cli
-
-
-```
+- 创建初始 monorepo c仓库
+`ray-template-clone monorepo`

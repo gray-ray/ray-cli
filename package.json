@@ -1,31 +1,47 @@
 {
-  "name": "ray-cli-template",
-  "version": "1.0.1",
-  "description": "ray-cli-template",
-  "main": "./bin/index.js",
+  "name": "ray-template-clone",
+  "version": "1.0.0",
+  "description": "前端脚手架",
+  "main": "dist/index.js",
+  "types": "types/index.d.ts",
   "scripts": {
-    "ray-cli": "./bin/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ts-node -P tsconfig.json src/index.ts",
+    "prebuild": "cp src/mono.sh dist/",
+    "build": "npm run prebuild && tsc -p tsconfig.json"
   },
   "bin": {
-    "ray-cli": "./bin/index.js"
+    "ray-template-clone": "dist/index.js"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gray-ray/ray-cli.git"
+  },
+  "author": "gray-ray",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gray-ray/ray-cli/issues"
+  },
+  "homepage": "https://github.com/gray-ray/ray-cli#readme",
   "devDependencies": {
-    "commander": "^11.0.0",
-    "fs-extra": "^11.1.1",
-    "handlebars": "^4.7.8",
-    "log-symbols": "^5.1.0",
-    "update-notifier": "^6.0.2"
+    "@types/node": "^20.14.13",
+    "@types/update-notifier": "^6.0.8",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
   },
   "dependencies": {
     "chalk": "4.1.2",
+    "commander": "^12.1.0",
     "download-git-repo": "^3.0.2",
     "ora": "5.4.1",
     "prompts": "^2.4.2",
     "shelljs": "^0.8.5",
-    "yaml": "^2.3.2"
-  }
+    "update-notifier": "5.1.0",
+    "yaml": "^2.5.0"
+  },
+  "keywords": [
+    "vite",
+    "react",
+    "vue",
+    "monorepo"
+  ]
 }
