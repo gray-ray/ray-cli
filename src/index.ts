@@ -4,6 +4,11 @@ const shelljs = require('shelljs');
 const path = require('path');
 const fs = require('fs');
 
+// 工具函数
+export { uuid, currying} from './func'; 
+
+
+
 const { spawn } = require('child_process');
 
 const ora = require('ora')
