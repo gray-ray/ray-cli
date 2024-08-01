@@ -1,7 +1,7 @@
 
-### 安装
+### 全局安装
 
-`npm i ray-template-clone`
+`npm i -g ray-template-clone`
 
 
 ### 使用

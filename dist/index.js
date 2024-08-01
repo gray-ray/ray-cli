@@ -4,14 +4,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.currying = exports.uuid = void 0;
 const shelljs = require('shelljs');
 const path = require('path');
 const fs = require('fs');
-// 工具函数
-var func_1 = require("./func");
-Object.defineProperty(exports, "uuid", { enumerable: true, get: function () { return func_1.uuid; } });
-Object.defineProperty(exports, "currying", { enumerable: true, get: function () { return func_1.currying; } });
 const { spawn } = require('child_process');
 const ora = require('ora');
 const download = require('download-git-repo');

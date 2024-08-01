@@ -1,1 +1,1 @@
-export { uuid, currying } from './func';
+export {};
